@@ -9,7 +9,7 @@ The datasets in this repository were derived from the following:
 # Dataset adaptations
 All adaptations were done to serve the purpose of the paper, which is quantifying the ability to generate answers that are faithful to the retrieved context from a knowledge base, and to adhere to a computational budget while remaining with datasets of considerable size to achieve significance.
 
--  **Natural questions**: This dataset comes with questions and answer without passages. We sampled 5,000 QA pairs at random. For each question us augmented with top 5 passages from an index built off Wikipedia with E5-base-v2 embeddings, and marked as either containing and not containing an answer to the question using a judge model.
+-  **Natural questions**: This dataset comes with questions and answer without passages. We sampled 5,000 QA pairs at random. For each question us augmented with top 5 passages from an index built off Wikipedia (Dec 2018) with E5-base-v2 embeddings, and marked as either containing and not containing an answer to the question using a judge model.
 -  **BioASQ-QA**: We used the BioASQ12 subset, out of which we selected the questions marked as factoid.  The data-set comes with relevant passages, and to obtain irrelevant passages, we retrieved the top-10 related passages from an index built from PubMed, and discarded the passages containing the ground-truth answer.
 -  **NoMIRACL**: The original data-set comes with questions and passages, each marked as containing and not containing the answer, but does _not_ contain an answer to each question.
    *  We prompted Claude 3.5 Sonnet to generate an answer from _only_ the passages marked as those containing an answer.
