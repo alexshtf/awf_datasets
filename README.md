@@ -1,10 +1,11 @@
 # Contents
-Datasets for the "Generate but Verify: Answering with Faithfulness in RAG-based Question Answering" paper by _Simone Filice, Elad Haramaty, Guy Horowitz, Zohar Karnin, Liane Lewin-Eytan, and Alex Shtoff_. The paper is about evaluating methods for generating answers that are faithful to context retrieved from a knowledge base.
+Datasets for the "Generate but Verify: Answering with Faithfulness in RAG-based Question Answering" paper by _Simone Filice, Elad Haramaty, Guy Horowitz, Zohar Karnin, Liane Lewin-Eytan, and Alex Shtoff_, to appear in AACL-2025. The paper is about evaluating methods for generating answers that are faithful to context retrieved from a knowledge base.
 
 The datasets in this repository were derived from the following:
 - Natural Questions [1]
 - BioASQ-QA [2]
 - NoMiracl [3]
+
 
 # Dataset adaptations
 All adaptations were done to serve the purpose of the paper, which is quantifying the ability to generate answers that are faithful to the retrieved context from a knowledge base, and to adhere to a computational budget while remaining with datasets of considerable size to achieve significance.
